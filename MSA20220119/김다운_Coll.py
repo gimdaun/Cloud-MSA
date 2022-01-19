@@ -11,7 +11,7 @@ result2 = setData1 | setData2
 print(result2)
 
 #3. 리스트 데이터 7,5,3,1,-1,-3,-5,-7 출력
-listData = [i for i in range(9) if i % 2 != 0] 
+listData = [i for i in range(-7,9) if i % 2 != 0] 
 listData.reverse()
 print(listData)
 
