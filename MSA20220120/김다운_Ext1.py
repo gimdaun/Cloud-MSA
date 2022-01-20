@@ -22,4 +22,5 @@ all_ave=ave_sum/len(i.keys())
 print(all_sum)
 print(all_ave)
 
+
 temp = 0
