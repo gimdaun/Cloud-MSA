@@ -38,7 +38,7 @@ jsonData1 = {
 try:
     changeFile = open("datalab\\mydata2.json", "w")
     json.dump(jsonData1, changeFile)
-except (IndexError) as error:
+except IndexError as error:
     print("오류 : " + error) 
 except FileNotFoundError:
     print("오류 : 파일을 찾을 수 없습니다.") 
@@ -74,7 +74,7 @@ else:
 try:
     changeFile = open("datalab\\mydata5.json", "w", encoding="utf-8")
     json.dump(jsonData1, changeFile, ensure_ascii=False, indent=4) 
-except IndexError as error:
+except Exception as error:
     print("오류 : " + error) 
 else:
     changeFile.close()
