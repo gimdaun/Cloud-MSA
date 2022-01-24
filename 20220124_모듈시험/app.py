@@ -24,6 +24,6 @@ def FlaskData():
         print("오류 : " + error) 
     else:
         changeFile.close()
-    #print(result2)
+    #print(result)
     
-    return result2
+    return result
