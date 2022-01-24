@@ -17,8 +17,13 @@ def FlaskData():
 
     result = json.loads(dataResult.text)
     #result2 = json.dumps(result, ensure_ascii=False, indent=5)
-    changeFile = open("FlaskLab\\mydata.json", "w", encoding="utf-8")
-    result2 = json.dump(result, changeFile, ensure_ascii=False, indent=5) 
+    try:
+        changeFile = open("FlaskLab\\mydata.json", "w", encoding="utf-8")
+        result2 = json.dump(result, changeFile, ensure_ascii=False, indent=5) 
+    except Exception as error:
+        print("오류 : " + error) 
+    else:
+        changeFile.close()
     #print(result2)
     
     return result2
